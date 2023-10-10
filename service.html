@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png" type="image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Foldit&family=Major+Mono+Display&family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Saurav Aryal</title>
+    <style>
+        .main{
+            overflow: hidden;
+        }
+        .sidebar{
+            height: 100vh;
+        }
+        .main .service{
+            position: relative;
+            color: white;
+            padding: 10px;
+        }
+        .main .service h1{
+            font-size:40px ;
+text-decoration: 5px underline black;
+font-family:'Times New Roman', Times, serif;
+text-shadow: 5px 3px 3px red;
+margin-bottom: 15px;
+        }
+        .main .service-page{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+
+            
+        }
+        .main .service-page h1{
+            position: absolute;
+            top: 40px;
+            justify-content: center;
+            text-align: center;
+        }
+        .main .service-page .HTML{
+            border: 2px solid rgb(0, 0, 0);
+            height: 350px;
+            margin-top: 20px;
+            width: 300px;
+            transition: 0.6s;
+            margin-right: 20px;
+
+            background-color: white;
+            color: black;
+            position: relative;
+            top: 500px;
+            font-size: 30px;
+            text-decoration: 3px underline rgb(255, 0, 0);
+            text-align: center;
+            animation: oknow 2s linear 1s 1  forwards normal;
+        }
+        .main .service-page .HTML:hover{
+            background-color: black;
+            color: white;
+            border: 2px solid white;
+            transform: translateY(-10px) scale(1.04);
+        box-shadow: 3px 5px 10px  rgb(255, 255, 255);
+        }
+        .main .service-page .HTML img{
+            width: 80px;
+            height:80px;
+            position: absolute;
+            background-color: rgb(0, 0, 0);
+            top: 40px;
+            left: 106px;
+            text-align: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: 0.6s;
+            border: 2px solid rgb(255, 255, 255);
+        }
+        .main .service-page .HTML:hover img{
+            background-color: rgb(255, 255, 255);
+        }
+        .main .service-page .HTML p{
+            position: absolute;
+            top: 140px;
+            padding: 10px;
+            text-align: start;
+            font-size: 20px;
+        }
+        .main .service-page .CSS{
+            border: 2px solid rgb(0, 0, 0);
+            height: 350px;
+            margin-top: 20px;
+            width: 300px;
+            margin-right: 20px;
+            background-color: white;
+            color: rgb(0, 0, 0);
+            position: relative;
+            top: 700px;
+            transition: 0.6s;
+            font-size: 30px;
+            text-decoration: 3px underline rgb(255, 0, 0);
+            text-align: center;
+            animation: oknow 2.5s linear 1.5s 1  forwards normal;
+        }
+        .main .service-page .CSS:hover{
+            border: 2px solid rgb(255, 255, 255);
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            transform: translateY(-10px) scale(1.04);
+        box-shadow: 3px 5px 10px  rgb(255, 255, 255);
+        }
+        .main .service-page .CSS img{
+            width: 90px;
+            height:90px;
+            position: absolute;
+            background-color: rgb(0, 0, 0);
+            top: 40px;
+            left: 106px;
+            text-align: center;
+            justify-content: center;
+            transition: 0.6s;
+            border-radius: 50%;
+            border: 2px solid rgb(255, 255, 255);
+        }
+        .main .service-page .CSS:hover img{
+            background-color: rgb(255, 255, 255);
+        }
+        .main .service-page .CSS p{
+            position: absolute;
+            top: 140px;
+            padding: 10px;
+            text-align: start;
+            font-size: 20px;
+        }
+        .main .service-page .JS{
+            border: 2px solid rgb(0, 0, 0);
+            height: 350px;
+            width: 300px;
+            background-color: rgb(255, 255, 255);
+            position: relative;
+            top: 700px;
+            margin-top: 20px;
+            font-size: 30px;
+            margin-right: 20px;
+            transition: 0.6s;
+            text-decoration: 3px underline rgb(255, 0, 0);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            animation: oknow 2s linear 2.5s 1  forwards normal;
+        }
+        .main .service-page .JS:hover{
+        background-color: #000000;
+        transition: 1s;
+        color: white;
+        border: 2px solid white;
+      transform: translateY(-10px) scale(1.04);
+        box-shadow: 3px 5px 10px  rgb(255, 255, 255);
+        }
+        .main .service-page .JS img{
+            width: 90px;
+            height:90px;
+            position: absolute;
+            background-color: rgb(0, 0, 0);
+            top: 40px;
+            left: 106px;
+            text-align: center;
+            transition: 0.6s;
+            justify-content: center;
+            border-radius: 50%;
+            border: 2px solid rgb(255, 255, 255);
+        }
+        .main .service-page .JS:hover img{
+            background-color: rgb(255, 255, 255);
+        }
+        .main .service-page .JS p{
+            position: absolute;
+            top: 140px;
+            padding: 10px;
+            text-align: start;
+            font-size: 20px;
+        }
+        @keyframes oknow {
+            from {
+                top: 300px;
+            opacity: 0;}
+                to {
+                    opacity: 1;
+                    top: 140px ;}
+        }
+        ul li.active a{
+           color: blue;
+           text-decoration: 4px underline red;
+            }
+@media (min-width:1120px) and (max-width:1282px) {
+.main .service-page{
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+}
+.main .service-page h1{
+position: absolute;
+left: 300px;
+}
+.main .service-page .HTML{
+            border: 2px solid rgb(0, 0, 0);
+            height: 350px;
+            margin-top: 20px;
+            width: 250px;
+            transition: 0.6s;
+            margin-right: 20px;
+            background-color: white;
+            color: black;
+            position: relative;
+            top: 500px;
+            font-size: 30px;
+            text-decoration: 3px underline rgb(255, 0, 0);
+            text-align: center;
+            animation: oknow 2s linear 1s 1  forwards normal;
+        }
+        .main .service-page .HTML img{
+            width: 80px;
+            height:80px;
+            position: absolute;
+            background-color: rgb(0, 0, 0);
+            top: 40px;
+            text-align: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: 0.6s;
+            border: 2px solid rgb(255, 255, 255);
+        }
+.main .service-page .CSS{
+            border: 2px solid rgb(0, 0, 0);
+            height: 350px;
+            margin-top: 20px;
+            width: 250px;
+            transition: 0.6s;
+            margin-right: 20px;
+            background-color: white;
+            color: black;
+            position: relative;
+            top: 500px;
+            font-size: 30px;
+            text-decoration: 3px underline rgb(255, 0, 0);
+            text-align: center;
+            animation: oknow 2s linear 1s 1  forwards normal;
+        }
+        .main .service-page .CSS img{
+            width: 80px;
+            height:80px;
+            position: absolute;
+            background-color: rgb(0, 0, 0);
+            top: 40px;
+            text-align: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: 0.6s;
+            border: 2px solid rgb(255, 255, 255);
+        }
+.main .service-page .JS{
+            border: 2px solid rgb(0, 0, 0);
+            height: 350px;
+            margin-top: 20px;
+            width: 250px;
+            transition: 0.6s;
+            margin-right: 20px;
+            background-color: white;
+            color: black;
+            position: relative;
+            top: 500px;
+            font-size: 30px;
+            text-decoration: 3px underline rgb(255, 0, 0);
+            text-align: center;
+            animation: oknow 2s linear 1s 1  forwards normal;
+        }
+        .main .service-page .JS img{
+            width: 80px;
+            height:80px;
+            position: absolute;
+            background-color: rgb(0, 0, 0);
+            top: 40px;
+            text-align: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: 0.6s;
+            border: 2px solid rgb(255, 255, 255);
+        }
+}
+@media (max-width:1119px) {
+    .main{
+        overflow: hidden;
+    }
+}
+@media (max-width:991px) {
+    .main{
+        overflow: auto;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="sidebar">
+<nav>
+   <a href="index.html"> SAURAV</a>
+    <ul>
+<li><a href="index.html">Home</a></li>
+<li class="active"><a href="service.html">Services</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+    </div>
+    <div class="main">
+        <div class="hamburger">
+            <img  width="35px"  class="ham" src="ham.png" alt="">
+            <img  width="40px" class="cross" src="cross.png" alt="">
+        </div>
+        <div class="service">
+            <h1 style="text-align: center;">SERVICES</h1>
+            <p id="para">I am a Front-End Web Developer and I can build your website or web app.
+                My expertise is in building responsive websites using HTML5/CSS3 along with JavaScript for frontend development.I can design and host your website on free domain as well as paid domain. <br>
+           <div class="service-page">
+               <h1> My services include</h1>
+      <div class="HTML"><div class="html-circle">HTML<img src="html.png
+        " alt=""></div><p>Hyper Text Markup Language (HTML) is a coding language through which the structure of a website is built.It helps us to write the information in our web page.</p></div>
+      <div class="CSS"><div class="html-circle">CSS<img src="css.png
+        " alt=""></div><p>Cascading Style Sheets (CSS) is a coding language through which the desgining of a website is done.It helps us to give better design and add colors to our web page.</p></div>
+      <div class="JS"><div class="html-circle">JavaScript<img src="js.png" alt=""></div><p>JavaScript is a programming and scripting language through which life is given to a website.It helps us to add more function,logic to our webpage as well as interact with the user.</p></div>
+            </div>
+        </div>
+        </div>
+    </div>
+<script src="index.js"></script>      
+</body>
+</html>

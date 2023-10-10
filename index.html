@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png" type="image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Foldit&family=Major+Mono+Display&family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Saurav Aryal</title>
+    <style>   body{ 
+        opacity: 0;
+        animation: ok 1s ease 0.3s 1 forwards normal;
+    }
+    @keyframes ok {
+        from {opacity : 0;} to {opacity : 1;} }
+        
+        .buttons{
+            animation: button 3s linear 2s forwards normal;
+            opacity: 0;
+        }
+        @keyframes button {
+            from {opacity: 0;}to { opacity: 1;;}
+        }
+            button{
+margin-top: 50px;
+position: absolute;
+animation: hui 3s linear 1s 1 forwards normal;
+            }
+            ul li.active a{
+           color: blue;
+           text-decoration: 4px underline red;
+            }
+            @keyframes hui {from {margin-top: 50px;} to {margin-top: 0px;}}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="sidebar">
+<nav>
+   <a href="index.html"> SAURAV</a>
+    <ul>
+<li class="active"><a href="index.html">Home</a></li>
+<li ><a href="service.html">Services</a></li>
+<li ><a href="about.html">About</a></li>
+<li ><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+    </div>
+    <div class="main">
+        <div class="hamburger">
+            <img  width="35px"  class="ham" src="ham.png" alt="">
+            <img  width="40px" class="cross" src="cross.png" alt="">
+        </div>
+<div class="infocontainer">
+    <div class="devinfo">
+        <div class="hello">Hi I am</div> 
+        <div class="name">Saurav Aryal</div>
+        <div class="about">A Front-End Web Developer</div> 
+        <br>
+        <div class="buttons">
+            <button> <a href="about.html" target="_blank"> Read More</a></button>
+            <button><a href="contact.html" target="_blank">Contact Me</a></button>
+        </div>
+    </div>
+    <div class="devpic"> <img src="IMG_20230427_174813_511-removebg-preview.png" alt="Saurav Aryal"></div>
+</div>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
